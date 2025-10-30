@@ -1,6 +1,7 @@
 
 public class SortTest {
-    public static void testSort (){
+    @org.junit.Test
+    public void testSort (){
         String[] input = {"I", "have", "an", "egg"};
         String[] output = {"an", "egg", "have", "I"};
 
@@ -9,7 +10,8 @@ public class SortTest {
         org.junit.Assert.assertArrayEquals(input, output);
     }
 
-    public static void testFindSmallest (){
+    @org.junit.Test
+    public void testFindSmallest (){
         String[] input = {"I", "have", "an", "egg"};
         int output = 2;
 
@@ -18,7 +20,8 @@ public class SortTest {
         org.junit.Assert.assertEquals(output, answer);
     }
 
-    public static void testSwap (){
+    @org.junit.Test
+    public void testSwap (){
         String[] input = {"I", "have", "an", "egg"};
         String[] output = {"an", "have", "I", "egg"};
 
@@ -30,7 +33,4 @@ public class SortTest {
         org.junit.Assert.assertArrayEquals(output, input);
     }
 
-    public static void main (String[] args){
-        testFindSmallest();
-    }
 }
